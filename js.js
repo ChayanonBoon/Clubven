@@ -486,7 +486,7 @@ function btninput(){
         }
         // show score all 
         document.getElementById("scoremax").innerHTML = 
-        '<div id="showscorediv">'+
+        '<div id="showscorediv"><h1>" Max Score "</h1>'+
             '<div class="scoreall" id="st1">'+
                 '<div class="scorename">'+
                     '<h4 > 1st </h4></div>'+
@@ -633,7 +633,7 @@ function btninput(){
         // show score all
         document.getElementById("scoreerror").innerHTML = 
                 
-        '<div id="showscorediv">'+
+        '<div id="showscorediv"><h1>" Error Score "</h1>'+
             '<div class="scoreall" id="st1">'+
                 '<div class="scorename">'+
                     '<h4 > 1st </h4></div>'+
