@@ -156,7 +156,7 @@ button{
   .player{
     float: left;
     width: 16%;
-    margin: 26px;
+    margin: 0 2%;
     text-align: center;
     height: 100%; /* Should be removed. Only for demonstration */
     background-color: rgb(255, 255, 255);
