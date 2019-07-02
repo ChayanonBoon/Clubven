@@ -1,0 +1,311 @@
+body{
+  font-family: 'Kanit', sans-serif;
+}
+table{
+    text-align: center;
+    width: 100%;
+    
+}
+table.showscore{
+    table-layout: auto;
+    text-align: center;
+}
+td, th {
+    text-align: center;
+    border-collapse: collapse;
+    /*border: 1px solid black;*/
+    float: center;
+}
+h1, h2, h3, h4, p{
+  /*color: rgb(75, 75, 75);*/
+  font-family: 'Kanit', sans-serif;
+}
+button{
+  font-family: 'Kanit', sans-serif;
+}
+
+.well{
+    color: rgb(96, 211, 2);
+}
+.error{
+    color: rgb(255, 93, 93);
+}
+.showscore{
+    text-align: center;
+    border: 2px solid  #008CBA;
+    border-radius: 12px;
+    padding: 16px;
+    border-collapse: collapse;
+}
+#showscore, #scoremax, #scoreerror{
+    border-collapse: collapse;
+    padding: 20px;
+}
+#showscoreall{
+    border-collapse: collapse;
+    padding: 20px;
+}
+#rowwell{
+    background-color:#f2f2f2; 
+}
+.rowerror{
+    background-color: #f2f2f2;
+}
+
+#ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #limenu {
+    float: left;
+  }
+  
+  #limenu .menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #limenu .menu:hover {
+    background-color: #111; 
+    width: 100%;
+    height: 100%;
+    border: 0ex;
+  }
+  .menu{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border: 0ex;
+  }
+
+ 
+  .choosePlayer:after {
+    text-align: center;
+  }
+  .choosePlayer{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+
+  }
+  .player{
+    float: left;
+    width: 16%;
+    margin: 0 2%;
+    text-align: center;
+    height: 100%; /* Should be removed. Only for demonstration */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 75%;
+    box-shadow: 0 4px 6px 0 rgba(56, 56, 56, 0.178), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
+  }
+  .btnplayer{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: rgba(0, 139, 186, 0);
+    border: 0px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    border-radius: 10px;
+  }
+  .btnplayer:hover {
+    background-color:rgb(255, 93, 93);
+    color: white;
+    border-radius: 10px;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 0px;
+    color: rgb(255, 93, 93);
+    border-bottom: 1px solid rgb(187, 187, 187);
+  }
+  #btninput{
+    text-align: center;
+    width: 100%;
+    background-color:  rgb(255, 93, 93);
+    border: 0px;
+    height: 60px;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 20px; 
+    color: white;
+  }
+  #btninput:hover {
+    color: #474747;
+    border: 2px solid rgb(255, 93, 93);
+    background-color:  white;
+  }
+  .center {
+    margin: auto;
+    width: 20%;
+  }
+  .centertitle{
+    margin: auto;
+    height: 100%;
+    width: 25%;
+  }
+  #btnsubmit{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 20px; 
+    color: #ddd;
+    border: 0px;
+    background-color: rgb(44, 41, 41);
+  }
+  #btnsubmit:hover{
+    color: rgb(44, 41, 41);
+    background-color: white;
+    border: 2px solid rgb(44, 41, 41);
+  }
+  .fornsize{
+    font-size: 50px;
+  }
+  .inputplayer6{
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px 0 rgba(49, 49, 49, 0.178), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
+  }
+  /* scoreall */
+  .scoreall:after {
+    text-align: center;
+  }
+  .scoreall{
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    float: right;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px 0 rgba(49, 49, 49, 0.178), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
+  }
+  .scorename {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    height: 100%; /* Should be removed. Only for demonstration */
+    
+  }
+  .scoretablevalue {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+    height: 100%; /* Should be removed. Only for demonstration */
+    
+  }
+  
+  #showscorediv{
+    border-collapse: collapse;
+    float: right;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+  /*  1 2 3 4 5 6 */
+  #st1{
+    color: rgb(255, 230, 0); 
+    font-size: 18px;
+  }
+  #nd2{
+    color: rgb(148, 148, 148); 
+    font-size: 16px;
+  }
+  #rd3{
+    color: rgb(179, 47, 6); 
+    font-size: 12px
+  }
+  #th456{
+    color: rgb(75, 75, 75); 
+    font-size: 10px
+  }
+
+  /* table */
+  #table{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(75, 75, 75); 
+  }
+  .delwell{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 93, 93);
+    border: 0px solid ;
+    font-size: auto;
+}
+
+.addwell{
+    background-color: rgba(255, 255, 255, 0); 
+  color: black; 
+  border: 2px solid rgb(255, 93, 93);
+  padding: auto;
+  border-radius: 6px;
+  margin: 3px;
+  font-size: auto;
+  text-align: center;
+}
+
+.addwell:hover {
+    background-color:rgb(255, 93, 93);
+    color: white;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 16px;
+    text-align: center;
+    height: 50%;
+    height: 100%; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    text-align: center;
+    content: "";
+    display: table;
+    padding: 3px;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .polaroid {
+    width: 100%;
+    box-shadow: 0 4px 6px 0 rgba(77, 76, 76, 0.336), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+  }
