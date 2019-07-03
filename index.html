@@ -1,333 +1,478 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Accounting Vocabulary Translation</title>
-    <style>
-        body {
-                text-align: center;
-                margin: 0px;
-                height: 100%;
-            }
-            #myForm{
-                display: inline-block;
-                margin-top: 15%;
-            }
-            .searchBox {
-                border: 0px;
-                color: #005d9b;
-                background-color: #b3e0ff;
-                height: 30px;
-                width: 300px;
-                padding: 5px;
-                font-size: 25px;
-                font-family: sans-serif;
-                text-align: center;
-            }
-            input[type=text]::placeholder{
-                color: #ffffff;
-                padding: 2px;
-                font-size: 25px;
-                font-family: sans-serif;
-            }
-            .searchBut, .speak {
-                height: 40px;
-                color: white;
-                background-color: #4db8ff;
-                border: 2px solid #4581a8;
-                font-size: 25px;
-                font-family: sans-serif;
-            }
-            .searchDiv {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #5fbdfc;
-                font-size: 20px;
-                font-family: sans-serif;
-            }
-
-            li {
-                float: left;
-            }
-
-            li a, .dropbtn {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover, .dropdown:hover .dropbtn {
-                background-color: #aaddff;
-            }
-
-            li.dropdown {
-                display: inline-block;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #0080bb;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content input,.history p {
-                color: #ffffff;
-                text-decoration: none;
-                display: block;
-                margin: auto;
-            }
-
-            .dropdown-content a {
-                    color: rgb(255, 255, 255);
-                    text-decoration: none;
-                    display: block;
-                    text-align: left;
-                }
-
-            .col1:hover {background-color: rgb(218, 96, 145)}
-            .col2:hover {background-color: rgb(130, 86, 197)}
-            .col3:hover {background-color: rgb(57, 168, 57)}
-            .col4:hover {background-color: rgb(39, 3, 243)}
-            .col5:hover {background-color: rgb(68, 68, 68)}
-            .col6:hover {background-color: rgb(217, 255, 0)}
-
-            .col1, .col2, .col3, .col4, .col5, .col6, .listWord {
-                background-color: #0080bb;
-                border: 0px;
-                height: 35px;
-                color: white;
-                font-size: 25px;
-                font-family: sans-serif;
-                width: 100%;
-            }
-
-            .listWord:hover {
-                background-color: #004464;
-            }
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-
-            .active {
-                 background-color: #0776c0;
-            }
-            
-            h1 {
-                font-size: 3em;
-                color: rgb(124, 192, 255);
-            }
-
-            html {
-                background-image: url("images/Accounting.jpg");
-                height: 100%;
-                position: relative;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: 0px;
-            }
-            .resultForm, .speak{
-                display: inline-block;
-                margin-top: 30px;
-            }
-            .result {
-                border: 0px;
-                color: #005d9b;
-                background-color: #b3e0ff;
-                height: 65px;
-                width: 600px;
-                padding: 5px;
-                font-size: 25px;
-                font-family: sans-serif;
-                border-radius: 10px;
-                text-align: center;
-                resize: none;
-            }
-
-        </style>
-    <script src='voicerss-tts.min.js'></script>
-</head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+  </head>
 <body>
-    <div class="bgimg">
-        <ul class="searchDiv">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Color</a>
-                <div class="dropdown-content">
-                    <a href="Test Color1.html" class="col1">Color1</a>
-                    <a href="Test Color2.html" class="col2">Color2</a>
-                    <a href="Test Color3.html" class="col3">Color3</a>
-                    <a href="Them1.html" class="col4">Them1</a>
-                    <a href="Them2.html" class="col5">Them2</a>
-                    <a href="Them3.html" class="col6">Them3</a>
+ <!--
+   style="background-color: rgb(51, 48, 48)"
+ -->
 
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">History</a>
-                <div class="dropdown-content" id="history">
-
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="https://translate.google.co.th/?hl=th" class="dropbtn">Google Translate</a>
-            </li>
-            <li style="float:right"><a class="active" href="#about">About</a></li>
-        </ul>
-
-        <form id="myForm">
-            <h1 class="site_title mega">Accounting Vocabulary</h1>
-            <input type="text" list="vocab" class="searchBox" placeholder="Example: average">
-            <datalist id="vocab">
-
-            </datalist>
-            <input type="button" value="Search" class="searchBut">
-        </form>
-        <div>
-            <form class="resultForm">
-                <td><textarea disabled="disabled" class="result">Translation Area</textarea></td>
-            </form>
-        </div>
-        <div>
-            <input type="button" value="Speak" class="speak">
-        </div>
-
+ <div class="centertitle"><h1 style="color: rgb(75, 75, 75)">Club Volleyball EN</h1></div>
+    <div class="choosePlayer">
+    <div class="player">
+      <button class="btnplayer" id="btnplayer6">
+          <h2>Player</h2>
+          <h1 class="fornsize" style="color: #86E3CE">6</h1>
+      </button>
+    </div>
+    <div class="player">
+        <button class="btnplayer" id="btnplayer7">
+          <h2>Player</h2>
+          <h1 class="fornsize" style="color: #D0E6A5">7</h1>
+        </button>
+    </div>
+    <div class="player">
+        <button class="btnplayer" id="btnplayer8">
+          <h2>Player</h2>
+          <h1 class="fornsize" style="color: #FFDD94">8</h1>
+        </button>
+    </div>
+    <div class="player">
+        <button class="btnplayer" id="btnplayer9">
+          <h2>Player</h2>
+          <h1 class="fornsize" style="color: #FA897B">9</h1>
+        </button>
+    </div>
+    <div class="player">
+        <button class="btnplayer" id="btnplayer10">
+          <h2>Player</h2>
+          <h1 class="fornsize" style="color: #CCABD8">10</h1>
+        </button>
+    </div>
     </div>
 
+ 
 
-    <script>
-        var data = document.querySelector('.searchBox');
-        data.onfocus = addWordList;
-        var option = document.getElementById("vocab");
-        var init = 0;
-        var searchBut = document.querySelector('.searchBut');
-        var show = document.querySelector('.result');
-        var posHis = 0;
-        var speak = document.querySelector('.speak');
+  <div class="inputplayer6" style="display:none;" id="display6">
+    <h2 style="color: rgb(75, 75, 75)">" Name Player "</h2>
+        <table>
+            <tr>
+              <th>player1</th>
+              <th>player2</th> 
+              <th>player3</th>
+              <th>player4</th>
+              <th>player5</th>
+              <th>player6</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="player1" placeholder="player1" style="text-align: center" id="player1"></td>
+              <td><input type="text" name="player2" placeholder="player2" style="text-align: center" id="player2"></td>
+              <td><input type="text" name="player3" placeholder="player3" style="text-align: center" id="player3"></td>
+              <td><input type="text" name="player4" placeholder="player4" style="text-align: center" id="player4"></td>
+              <td><input type="text" name="player5" placeholder="player5" style="text-align: center" id="player5"></td>
+              <td><input type="text" name="player6" placeholder="player6" style="text-align: center" id="player6"></td>
+            </tr>
+        </table>
+          <div class="center">
+            <button id="btninput">create</button>
+          </div>
+  </div>
 
-        var check = '';
+  
+<div id="showscoreplayer" style="display:none;">
 
-        var wordList;
-        var requestURL = "Vocab.json";
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function () {
-            var list = request.response;
-            showVocab(list);
-        }
+   <div class="row">
+          <div class="column">
+            <div class="polaroid">
+              <h2>" Set "</h2>
+              <table id="table">
+                  <tr>
+                      <th><h3 class="well"> Well : </h3></th>
+                      <th><h3 id="set_score1">0</h3></th>
+                      <th><h3 id="set_score2">0</h3></th> 
+                      <th><h3 id="set_score3">0</h3></th>
+                      <th><h3 id="set_score4">0</h3></th>
+                      <th><h3 id="set_score5">0</h3></th>
+                      <th><h3 id="set_score6">0</h3></th>
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="add_score_set_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_set_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_set_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_set_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_set_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_set_player6" class="addwell">player6</button></td> 
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="del_score_set_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_set_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_set_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_set_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_set_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_set_player6" class="delwell">del</button></td>
+                  </tr>
+                  <tr>
+                              <th><h3 class="error"> Error :</h3></th>
+                              <th><h3 id="set_score1E">0</h3></th>
+                              <th><h3 id="set_score2E">0</h3></th> 
+                              <th><h3 id="set_score3E">0</h3></th>
+                              <th><h3 id="set_score4E">0</h3></th>
+                              <th><h3 id="set_score5E">0</h3></th>
+                              <th><h3 id="set_score6E">0</h3></th>
+                  </tr>
+                  <tr>
+                              <td></td>
+                              <td><button id="add_score_set_player1E" class="addwell">player1</button></td>
+                              <td><button id="add_score_set_player2E" class="addwell">player2</button></td>
+                              <td><button id="add_score_set_player3E" class="addwell">player3</button></td>
+                              <td><button id="add_score_set_player4E" class="addwell">player4</button></td>
+                              <td><button id="add_score_set_player5E" class="addwell">player5</button></td>
+                              <td><button id="add_score_set_player6E" class="addwell">player6</button></td>
+                  </tr>
+                  <tr>
+                              <td></td>
+                              <td><button id="del_score_set_player1E" class="delwell">del</button></td>
+                              <td><button id="del_score_set_player2E" class="delwell">del</button></td>
+                              <td><button id="del_score_set_player3E" class="delwell">del</button></td>
+                              <td><button id="del_score_set_player4E" class="delwell">del</button></td>
+                              <td><button id="del_score_set_player5E" class="delwell">del</button></td>
+                              <td><button id="del_score_set_player6E" class="delwell">del</button></td>
+                  </tr>
+              </table>
+            </div>
+            <div class="polaroid">
+              <h2>" Spiker "</h2>
+              <table id="table">
+                  <tr>
+                            <th><h3 class="well">Well :</h3></th>
+                            <th><h3 id="spi_score1">0</h3></th>
+                            <th><h3 id="spi_score2">0</h3></th> 
+                            <th><h3 id="spi_score3">0</h3></th>
+                            <th><h3 id="spi_score4">0</h3></th>
+                            <th><h3 id="spi_score5">0</h3></th>
+                            <th><h3 id="spi_score6">0</h3></th>
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="add_score_spi_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_spi_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_spi_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_spi_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_spi_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_spi_player6" class="addwell">player6</button></td> 
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="del_score_spi_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player6" class="delwell">del</button></td> 
+                  </tr>
+                  <tr>
+                            <th><h3 class="error">Error :</h3></th>
+                            <th><h3 id="spi_score1E">0</h3></th>
+                            <th><h3 id="spi_score2E">0</h3></th> 
+                            <th><h3 id="spi_score3E">0</h3></th>
+                            <th><h3 id="spi_score4E">0</h3></th>
+                            <th><h3 id="spi_score5E">0</h3></th>
+                            <th><h3 id="spi_score6E">0</h3></th>
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="add_score_spi_player1E" class="addwell">player1</button></td>
+                            <td><button id="add_score_spi_player2E" class="addwell">player2</button></td>
+                            <td><button id="add_score_spi_player3E" class="addwell">player3</button></td>
+                            <td><button id="add_score_spi_player4E" class="addwell">player4</button></td>
+                            <td><button id="add_score_spi_player5E" class="addwell">player5</button></td>
+                            <td><button id="add_score_spi_player6E" class="addwell">player6</button></td> 
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="del_score_spi_player1E" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player2E" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player3E" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player4E" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player5E" class="delwell">del</button></td>
+                            <td><button id="del_score_spi_player6E" class="delwell">del</button></td> 
+                  </tr> 
+              </table>
+            </div>
+            <div class="polaroid">
+              <h2>" Digger "</h2>
+              <table id="table">
+                  <tr>
+                            <th><h3 class="well">Well :</h3></th> 
+                            <th><h3 id="dig_score1">0</h3></th>
+                            <th><h3 id="dig_score2">0</h3></th> 
+                            <th><h3 id="dig_score3">0</h3></th>
+                            <th><h3 id="dig_score4">0</h3></th>
+                            <th><h3 id="dig_score5">0</h3></th>
+                            <th><h3 id="dig_score6">0</h3></th>
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="add_score_dig_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_dig_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_dig_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_dig_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_dig_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_dig_player6" class="addwell">player6</button></td> 
+                  </tr>
+                  <tr>
+                            <td></td>
+                            <td><button id="del_score_dig_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_dig_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_dig_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_dig_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_dig_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_dig_player6" class="delwell">del</button></td>
+                  </tr>
+                  <tr>
+                              <th><h3 class="error">Error "</h3></th> 
+                              <th><h3 id="dig_score1E">0</h3></th>
+                              <th><h3 id="dig_score2E">0</h3></th> 
+                              <th><h3 id="dig_score3E">0</h3></th>
+                              <th><h3 id="dig_score4E">0</h3></th>
+                              <th><h3 id="dig_score5E">0</h3></th>
+                              <th><h3 id="dig_score6E">0</h3></th>
+                  </tr>
+                  <tr>
+                              <td></td>
+                              <td><button id="add_score_dig_player1E" class="addwell">player1</button></td>
+                              <td><button id="add_score_dig_player2E" class="addwell">player2</button></td>
+                              <td><button id="add_score_dig_player3E" class="addwell">player3</button></td>
+                              <td><button id="add_score_dig_player4E" class="addwell">player4</button></td>
+                              <td><button id="add_score_dig_player5E" class="addwell">player5</button></td>
+                              <td><button id="add_score_dig_player6E" class="addwell">player6</button></td> 
+                  </tr>
+                  <tr>
+                              <td></td>
+                              <td><button id="del_score_dig_player1E" class="delwell">del</button></td>
+                              <td><button id="del_score_dig_player2E" class="delwell">del</button></td>
+                              <td><button id="del_score_dig_player3E" class="delwell">del</button></td>
+                              <td><button id="del_score_dig_player4E" class="delwell">del</button></td>
+                              <td><button id="del_score_dig_player5E" class="delwell">del</button></td>
+                              <td><button id="del_score_dig_player6E" class="delwell">del</button></td>
+                  </tr> 
+              </table>
+            </div>
+          </div>
+          <div class="column">
+                <div class="polaroid">
+                  <h2>" Server "</h2>
+                  <table id="table">
+                        <tr>
+                          <th><h3 class="well">Well :</h3></th>
+                          <th><h3 id="ser_score1">0</h3></th>
+                          <th><h3 id="ser_score2">0</h3></th> 
+                          <th><h3 id="ser_score3">0</h3></th>
+                          <th><h3 id="ser_score4">0</h3></th>
+                          <th><h3 id="ser_score5">0</h3></th>
+                          <th><h3 id="ser_score6">0</h3></th>
+                        </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="add_score_ser_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_ser_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_ser_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_ser_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_ser_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_ser_player6" class="addwell">player6</button></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="del_score_ser_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player6" class="delwell">del</button></td>
+                          </tr>
+                            <tr>
+                            <th><h3 class="error"> Error :</h3></th>
+                            <th><h3 id="ser_score1E">0</h3></th>
+                            <th><h3 id="ser_score2E">0</h3></th> 
+                            <th><h3 id="ser_score3E">0</h3></th>
+                            <th><h3 id="ser_score4E">0</h3></th>
+                            <th><h3 id="ser_score5E">0</h3></th>
+                            <th><h3 id="ser_score6E">0</h3></th>
+                            </tr>
+                            <tr>
+                              <td></td>
+                            <td><button id="add_score_ser_player1E" class="addwell">player1</button></td>
+                            <td><button id="add_score_ser_player2E" class="addwell">player2</button></td>
+                            <td><button id="add_score_ser_player3E" class="addwell">player3</button></td>
+                            <td><button id="add_score_ser_player4E" class="addwell">player4</button></td>
+                            <td><button id="add_score_ser_player5E" class="addwell">player5</button></td>
+                            <td><button id="add_score_ser_player6E" class="addwell">player6</button></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td><button id="del_score_ser_player1E" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player2E" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player3E" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player4E" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player5E" class="delwell">del</button></td>
+                            <td><button id="del_score_ser_player6E" class="delwell">del</button></td>
+                            </tr>
+                  </table>
+                </div>
+                <div class="polaroid">
+                  <h2>" Blocker "</h2>
+                  <table id="table">
+                          <tr>
+                            <th><h3 class="well">Well :</h3></th>
+                            <th><h3 id="blo_score1">0</h3></th>
+                            <th><h3 id="blo_score2">0</h3></th> 
+                            <th><h3 id="blo_score3">0</h3></th>
+                            <th><h3 id="blo_score4">0</h3></th>
+                            <th><h3 id="blo_score5">0</h3></th>
+                            <th><h3 id="blo_score6">0</h3></th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="add_score_blo_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_blo_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_blo_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_blo_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_blo_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_blo_player6" class="addwell">player6</button></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="del_score_blo_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player6" class="delwell">del</button></td>
+                          </tr>
+                          <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th> 
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <th><h3 class="error">Error :</h3></th>
+                            <th><h3 id="blo_score1E">0</h3></th>
+                            <th><h3 id="blo_score2E">0</h3></th> 
+                            <th><h3 id="blo_score3E">0</h3></th>
+                            <th><h3 id="blo_score4E">0</h3></th>
+                            <th><h3 id="blo_score5E">0</h3></th>
+                            <th><h3 id="blo_score6E">0</h3></th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="add_score_blo_player1E" class="addwell">player1</button></td>
+                            <td><button id="add_score_blo_player2E" class="addwell">player2</button></td>
+                            <td><button id="add_score_blo_player3E" class="addwell">player3</button></td>
+                            <td><button id="add_score_blo_player4E" class="addwell">player4</button></td>
+                            <td><button id="add_score_blo_player5E" class="addwell">player5</button></td>
+                            <td><button id="add_score_blo_player6E" class="addwell">player6</button></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="del_score_blo_player1E" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player2E" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player3E" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player4E" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player5E" class="delwell">del</button></td>
+                            <td><button id="del_score_blo_player6E" class="delwell">del</button></td>
+                          </tr> 
+                  </table> 
+                </div>
+                <div class="polaroid">
+                  <h2>" Receiver "</h2>
+                  <table id="table">
+                          <tr>
+                            <th><h3 class="well">Well :</h3></th>
+                            <th><h3 id="rec_score1">0</h3></th>
+                            <th><h3 id="rec_score2">0</h3></th> 
+                            <th><h3 id="rec_score3">0</h3></th>
+                            <th><h3 id="rec_score4">0</h3></th>
+                            <th><h3 id="rec_score5">0</h3></th>
+                            <th><h3 id="rec_score6">0</h3></th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="add_score_rec_player1" class="addwell">player1</button></td>
+                            <td><button id="add_score_rec_player2" class="addwell">player2</button></td>
+                            <td><button id="add_score_rec_player3" class="addwell">player3</button></td>
+                            <td><button id="add_score_rec_player4" class="addwell">player4</button></td>
+                            <td><button id="add_score_rec_player5" class="addwell">player5</button></td>
+                            <td><button id="add_score_rec_player6" class="addwell">player6</button></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><button id="del_score_rec_player1" class="delwell">del</button></td>
+                            <td><button id="del_score_rec_player2" class="delwell">del</button></td>
+                            <td><button id="del_score_rec_player3" class="delwell">del</button></td>
+                            <td><button id="del_score_rec_player4" class="delwell">del</button></td>
+                            <td><button id="del_score_rec_player5" class="delwell">del</button></td>
+                            <td><button id="del_score_rec_player6" class="delwell">del</button></td>
+                          </tr>
+                          <tr>
+                              <th><h3 class="error">Error :</h3></th>
+                              <th><h3 id="rec_score1E">0</h3></th>
+                              <th><h3 id="rec_score2E">0</h3></th> 
+                              <th><h3 id="rec_score3E">0</h3></th>
+                              <th><h3 id="rec_score4E">0</h3></th>
+                              <th><h3 id="rec_score5E">0</h3></th>
+                              <th><h3 id="rec_score6E">0</h3></th>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td><button id="add_score_rec_player1E" class="addwell">player1</button></td>
+                              <td><button id="add_score_rec_player2E" class="addwell">player2</button></td>
+                              <td><button id="add_score_rec_player3E" class="addwell">player3</button></td>
+                              <td><button id="add_score_rec_player4E" class="addwell">player4</button></td>
+                              <td><button id="add_score_rec_player5E" class="addwell">player5</button></td>
+                              <td><button id="add_score_rec_player6E" class="addwell">player6</button></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td><button id="del_score_rec_player1E" class="delwell">del</button></td>
+                              <td><button id="del_score_rec_player2E" class="delwell">del</button></td>
+                              <td><button id="del_score_rec_player3E" class="delwell">del</button></td>
+                              <td><button id="del_score_rec_player4E" class="delwell">del</button></td>
+                              <td><button id="del_score_rec_player5E" class="delwell">del</button></td>
+                              <td><button id="del_score_rec_player6E" class="delwell">del</button></td>
+                            </tr>
+                  </table>
+                </div>
+          </div>
+  </div>
+  <div class="center">
+    <button id="btnsubmit">OK</button>
+  </div>
+  
 
-        function showVocab(jsonobj) {
-            wordList = jsonobj['Vocabulary'];
-        }
+<div  id="showscoreall" style="width: 100%">
+      <ul id="ulmenu">
+          <li id="limenu"><input class="menu" type="button" id="divscore" value="Score"></li>
+          <li id="limenu"><input class="menu" type="button" id="divmax" value="Score Max"></li>
+          <li id="limenu"><input class="menu" type="button" id="diverror" value="Score Error"></li>
+      </ul>
+  </div>
+  <div id="scoremax" style="display:none;" >
+    
+  </div>
 
-        function addWordList() {
-            var word = '';
-            if (init == 0) {
-                for (var i = 0; i < wordList.length; i++) {
-                    var vocabLi = document.createElement("OPTION");
-                    word = wordList[i].vocab;
-                    vocabLi.setAttribute("value", word.slice(1, word.length - 1));
-                    option.appendChild(vocabLi);
-                }
-                init++;
-            }
-        }
+  <div id="scoreerror" style="display:none;" >
+    
+  </div>
 
-        searchBut.addEventListener('click', search);
+  <div  class="div-activity" id="showscore" style="display:none;">
+    <h1 style="text-align: center" style="width: 100%">" Score "</h1>
+  </div>
 
-        function search() {
-            var insertWord = document.querySelector('.searchBox');
+</div>
 
-            check = insertWord.value;
-
-            for (var i = 0; i < wordList.length; i++) {
-                var vocabList = wordList[i].vocab;
-                if (check == '' || check == ' ' || check == "  " || check == "   ") {
-                    show.textContent = "Please enter something";
-                } else if (vocabList.includes(check)) {
-                    if (vocabList.length == (check.length + 2)) {
-                        show.textContent = vocabList + " \n " + wordList[i].meaning;
-                        addHistory(vocabList);
-                        break;
-                    }
-                } else {
-                    show.textContent = "Sorry, we can't find your word (" + check + ")";
-                }
-            }
-        }
-
-        speak.addEventListener('click', speech);
-
-        function speech() {
-            var line = show.value.split('\n');
-            VoiceRSS.speech({
-                key: '2558902b05234f43906c04edebfc269c',
-                src: line[0],
-                hl: 'en-us',
-                r: 0,
-                c: 'mp3',
-                f: '44khz_16bit_stereo',
-                ssml: false
-            });
-        }
-
-        function addHistory(wordHis) {
-            var history = document.querySelector('#history');
-            var listWord = document.createElement('input');
-
-            if (checkHis(wordHis) == true) {
-                listWord.setAttribute('type', 'button');
-                listWord.setAttribute('class', 'listWord');
-                listWord.setAttribute('value', wordHis);
-
-                listWord.addEventListener('click', showMean);
-                history.appendChild(listWord);
-            }
-        }
-
-        function checkHis(checkWord) {
-            var history = document.querySelector('#history');
-            var checkLoop = 0;
-
-            if (history.childElementCount == 0) {
-                return true;
-            } else {
-                for (var i = 0; i < history.childElementCount; i++) {
-                    if (checkWord.includes(history.children[i].getAttribute('value'))) {
-                        checkLoop++;
-                        return false;
-                    }
-                }
-                if (checkLoop == 0) {
-                    return true;
-                }
-            }
-        }
-
-        function showMean(event) {
-            var e = event.target;
-            for (var i = 0; i < wordList.length; i++) {
-                var vocabList = wordList[i].vocab;
-                if (vocabList.length == (e.value.length)) {
-                    if (vocabList.includes(e.value)) {
-                        show.textContent = vocabList + " \n " + wordList[i].meaning;
-                        break;
-                    }
-                }
-            }
-        }
-    </script>
-
+  <script src="js.js"></script>
+    
 </body>
-
 </html>
