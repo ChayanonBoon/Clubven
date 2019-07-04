@@ -224,7 +224,7 @@ function btninput(){
          showscoreall();
             function showscoreall(){
              document.getElementById("showscore").innerHTML += 
-             '<div id="showscorediv"><h2 style="color: rgb(75, 75, 75)">---------- Set: '+ count +' ----------</h2></div>'+
+             '<div id="showscorediv"><h2 style="color: rgb(75, 75, 75); font-size: 2vw">---------- Set: '+ count +' ----------</h2></div>'+
         '<div id="showscorediv">'+
             '<div class="scoreall">'+
                 '<div class="scorename">'+
