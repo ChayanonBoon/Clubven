@@ -226,7 +226,7 @@ function btninput(){
              document.getElementById("showscore").innerHTML += 
              '<div id="showscorediv"><h2 style="color: rgb(75, 75, 75); font-size: 2vw">---------- Set: '+ count +' ----------</h2></div>'+
         '<div id="showscorediv">'+
-            '<div class="scoreall">'+
+            '<div class="scoreall"  id="row1">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer1 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
@@ -253,7 +253,7 @@ function btninput(){
                 '</div>'+
             '</div>'+
         // player 2
-            '<div class="scoreall" id="rowwell">'+
+            '<div class="scoreall" id="row2">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer2 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
@@ -280,7 +280,7 @@ function btninput(){
                 '</div>'+
             '</div>'+
             // player 3
-            '<div class="scoreall">'+
+            '<div class="scoreall"  id="row1">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer3 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
@@ -307,7 +307,7 @@ function btninput(){
                 '</div>'+
             '</div>'+
             // player 4
-            '<div class="scoreall" id="rowwell">'+
+            '<div class="scoreall" id="row2">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer4 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
@@ -334,7 +334,7 @@ function btninput(){
                 '</div>'+
             '</div>'+
             // player 5
-            '<div class="scoreall">'+
+            '<div class="scoreall"  id="row1">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer5 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
@@ -361,7 +361,7 @@ function btninput(){
                 '</div>'+
             '</div>'+
             // player 6
-            '<div class="scoreall"  id="rowwell">'+
+            '<div class="scoreall"  id="row2">'+
                 '<div class="scorename">'+
                     '<h3>' + nameplayer6 + '</h3></div>'+
                 '<div class="scoretablevalue">'+
