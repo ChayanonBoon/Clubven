@@ -33,13 +33,102 @@ function btninput() {
     var scorePlayer4 = 0;
     var scorePlayer5 = 0;
     var scorePlayer6 = 0;
-
-    var scorePlayer1E = 0;
+	
+	var scorePlayer1E = 0;
     var scorePlayer2E = 0;
     var scorePlayer3E = 0;
     var scorePlayer4E = 0;
     var scorePlayer5E = 0;
     var scorePlayer6E = 0;
+	
+	
+	var scoreSet1 = 0;	
+	var scoreSer1 = 0;
+	var scoreSpi1 = 0;
+	var scoreBlo1 = 0;
+	var scoreDig1 = 0;
+	var scoreRec1 = 0;
+
+	var	scoreSet2 = 0;
+	var	scoreSer2 = 0;
+	var	scoreSpi2 = 0;
+	var	scoreBlo2 = 0;
+	var	scoreDig2 = 0;
+	var	scoreRec2 = 0;
+
+	var	scoreSet3 = 0;
+	var	scoreSer3 = 0;
+	var	scoreSpi3 = 0;
+	var	scoreBlo3 = 0;
+	var	scoreDig3 = 0;
+	var	scoreRec3 = 0;
+    
+	var	scoreSet4 = 0;
+	var	scoreSer4 = 0;
+	var	scoreSpi4 = 0;
+	var	scoreBlo4 = 0;
+	var	scoreDig4 = 0;
+	var	scoreRec4 = 0;
+    
+	var	scoreSet5 = 0;
+	var	scoreSer5 = 0;
+	var	scoreSpi5 = 0;
+	var	scoreBlo5 = 0;
+	var	scoreDig5 = 0;
+	var	scoreRec5 = 0;
+
+	var	scoreSet6 = 0;
+	var	scoreSer6 = 0;
+	var	scoreSpi6 = 0;
+	var	scoreBlo6 = 0;
+	var	scoreDig6 = 0;
+	var	scoreRec6 = 0;
+	
+	var scoreSet1E = 0;	
+	var scoreSer1E = 0;
+	var scoreSpi1E = 0;
+	var scoreBlo1E = 0;
+	var scoreDig1E = 0;
+	var scoreRec1E = 0;
+
+	var	scoreSet2E = 0;
+	var	scoreSer2E = 0;
+	var	scoreSpi2E = 0;
+	var	scoreBlo2E = 0;
+	var	scoreDig2E = 0;
+	var	scoreRec2E = 0;
+
+	var	scoreSet3E = 0;
+	var	scoreSer3E = 0;
+	var	scoreSpi3E = 0;
+	var	scoreBlo3E = 0;
+	var	scoreDig3E = 0;
+	var	scoreRec3E = 0;
+    
+	var	scoreSet4E = 0;
+	var	scoreSer4E = 0;
+	var	scoreSpi4E = 0;
+	var	scoreBlo4E = 0;
+	var	scoreDig4E = 0;
+	var	scoreRec4E = 0;
+    
+	var	scoreSet5E = 0;
+	var	scoreSer5E = 0;
+	var	scoreSpi5E = 0;
+	var	scoreBlo5E = 0;
+	var	scoreDig5E = 0;
+	var	scoreRec5E = 0;
+
+	var	scoreSet6E = 0;
+	var	scoreSer6E = 0;
+	var	scoreSpi6E = 0;
+	var	scoreBlo6E = 0;
+	var	scoreDig6E = 0;
+	var	scoreRec6E = 0;
+
+	
+	
+	
     var count = 1;
 
     var btnsub = document.getElementById("btnsubmit");
@@ -394,90 +483,90 @@ function btninput() {
         showscoretotal();
 
         function showscoretotal() {
-            scoreSetPlayer1+=scoreSetPlayer1;
-            scoreSerPlayer1+=scoreSerPlayer1;
-            scoreSpiPlayer1+=scoreSpiPlayer1;
-            scoreBloPlayer1+=scoreBloPlayer1;
-            scoreDigPlayer1+=scoreDigPlayer1;
-            scoreRecPlayer1+=scoreRecPlayer1;
+            scoreSet1+=scoreSetPlayer1;
+            scoreSer1+=scoreSerPlayer1;
+            scoreSpi1+=scoreSpiPlayer1;
+            scoreBlo1+=scoreBloPlayer1;
+            scoreDig1+=scoreDigPlayer1;
+            scoreRec1+=scoreRecPlayer1;
 
-            scoreSetPlayer2+=scoreSetPlayer2;
-            scoreSerPlayer2+=scoreSerPlayer2;
-            scoreSpiPlayer2+=scoreSpiPlayer2;
-            scoreBloPlayer2+=scoreBloPlayer2;
-            scoreDigPlayer2+=scoreDigPlayer2;
-            scoreRecPlayer2+=scoreRecPlayer2;
+            scoreSet2+=scoreSetPlayer2;
+            scoreSer2+=scoreSerPlayer2;
+            scoreSpi2+=scoreSpiPlayer2;
+            scoreBlo2+=scoreBloPlayer2;
+            scoreDig2+=scoreDigPlayer2;
+            scoreRec2+=scoreRecPlayer2;
 
-            scoreSetPlayer3+=scoreSetPlayer3;
-            scoreSerPlayer3+=scoreSerPlayer3;
-            scoreSpiPlayer3+=scoreSpiPlayer3;
-            scoreBloPlayer3+=scoreBloPlayer3;
-            scoreDigPlayer3+=scoreDigPlayer3;
-            scoreRecPlayer3+=scoreRecPlayer3;
+            scoreSet3+=scoreSetPlayer3;
+            scoreSer3+=scoreSerPlayer3;
+            scoreSpi3+=scoreSpiPlayer3;
+            scoreBlo3+=scoreBloPlayer3;
+            scoreDig3+=scoreDigPlayer3;
+            scoreRec3+=scoreRecPlayer3;
 
-            scoreSetPlayer4+=scoreSetPlayer4;
-            scoreSerPlayer4+=scoreSerPlayer4;
-            scoreSpiPlayer4+=scoreSpiPlayer4;
-            scoreBloPlayer4+=scoreBloPlayer4;
-            scoreDigPlayer4+=scoreDigPlayer4;
-            scoreRecPlayer4+=scoreRecPlayer4;
+            scoreSet4+=scoreSetPlayer4;
+            scoreSer4+=scoreSerPlayer4;
+            scoreSpi4+=scoreSpiPlayer4;
+            scoreBlo4+=scoreBloPlayer4;
+            scoreDig4+=scoreDigPlayer4;
+            scoreRec4+=scoreRecPlayer4;
 
-            scoreSetPlayer5+=scoreSetPlayer5;
-            scoreSerPlayer5+=scoreSerPlayer5;
-            scoreSpiPlayer5+=scoreSpiPlayer5;
-            scoreBloPlayer5+=scoreBloPlayer5;
-            scoreDigPlayer5+=scoreDigPlayer5;
-            scoreRecPlayer5+=scoreRecPlayer5;
+            scoreSet5+=scoreSetPlayer5;
+            scoreSer5+=scoreSerPlayer5;
+            scoreSpi5+=scoreSpiPlayer5;
+            scoreBlo5+=scoreBloPlayer5;
+            scoreDig5+=scoreDigPlayer5;
+            scoreRec5+=scoreRecPlayer5;
 
-            scoreSetPlayer6+=scoreSetPlayer6;
-            scoreSerPlayer6+=scoreSerPlayer6;
-            scoreSpiPlayer6+=scoreSpiPlayer6;
-            scoreBloPlayer6+=scoreBloPlayer6;
-            scoreDigPlayer6+=scoreDigPlayer6;
-            scoreRecPlayer6+=scoreRecPlayer6;
+            scoreSet6+=scoreSetPlayer6;
+            scoreSer6+=scoreSerPlayer6;
+            scoreSpi6+=scoreSpiPlayer6;
+            scoreBlo6+=scoreBloPlayer6;
+            scoreDig6+=scoreDigPlayer6;
+            scoreRec6+=scoreRecPlayer6;
             
             //// ERROR ////
-            scoreSetPlayer1E+=scoreSetPlayer1E;
-            scoreSerPlayer1E+=scoreSerPlayer1E;
-            scoreSpiPlayer1E+=scoreSpiPlayer1E;
-            scoreBloPlayer1E+=scoreBloPlayer1E;
-            scoreDigPlayer1E+=scoreDigPlayer1E;
-            scoreRecPlayer1E+=scoreRecPlayer1E;
+            scoreSet1E+=scoreSetPlayer1E;
+            scoreSer1E+=scoreSerPlayer1E;
+            scoreSpi1E+=scoreSpiPlayer1E;
+            scoreBlo1E+=scoreBloPlayer1E;
+            scoreDig1E+=scoreDigPlayer1E;
+            scoreRec1E+=scoreRecPlayer1E;
 
-            scoreSetPlayer2E+=scoreSetPlayer2E;
-            scoreSerPlayer2E+=scoreSerPlayer2E;
-            scoreSpiPlayer2E+=scoreSpiPlayer2E;
-            scoreBloPlayer2E+=scoreBloPlayer2E;
-            scoreDigPlayer2E+=scoreDigPlayer2E;
-            scoreRecPlayer2E+=scoreRecPlayer2E;
+            scoreSet2E+=scoreSetPlayer2E;
+            scoreSer2E+=scoreSerPlayer2E;
+            scoreSpi2E+=scoreSpiPlayer2E;
+            scoreBlo2E+=scoreBloPlayer2E;
+            scoreDig2E+=scoreDigPlayer2E;
+            scoreRec2E+=scoreRecPlayer2E;
 
-            scoreSetPlayer3E+=scoreSetPlayer3E;
-            scoreSerPlayer3E+=scoreSerPlayer3E;
-            scoreSpiPlayer3E+=scoreSpiPlayer3E;
-            scoreBloPlayer3E+=scoreBloPlayer3E;
-            scoreDigPlayer3E+=scoreDigPlayer3E;
-            scoreRecPlayer3E+=scoreRecPlayer3E;
+            scoreSet3E+=scoreSetPlayer3E;
+            scoreSer3E+=scoreSerPlayer3E;
+            scoreSpi3E+=scoreSpiPlayer3E;
+            scoreBlo3E+=scoreBloPlayer3E;
+            scoreDig3E+=scoreDigPlayer3E;
+            scoreRec3E+=scoreRecPlayer3E;
 
-            scoreSetPlayer4E+=scoreSetPlayer4E;
-            scoreSerPlayer4E+=scoreSerPlayer4E;
-            scoreSpiPlayer4E+=scoreSpiPlayer4E;
-            scoreBloPlayer4E+=scoreBloPlayer4E;
-            scoreDigPlayer4E+=scoreDigPlayer4E;
-            scoreRecPlayer4E+=scoreRecPlayer4E;
+            scoreSet4E+=scoreSetPlayer4E;
+            scoreSer4E+=scoreSerPlayer4E;
+            scoreSpi4E+=scoreSpiPlayer4E;
+            scoreBlo4E+=scoreBloPlayer4E;
+            scoreDig4E+=scoreDigPlayer4E;
+            scoreRec4E+=scoreRecPlayer4E;
 
-            scoreSetPlayer5E+=scoreSetPlayer5E;
-            scoreSerPlayer5E+=scoreSerPlayer5E;
-            scoreSpiPlayer5E+=scoreSpiPlayer5E;
-            scoreBloPlayer5E+=scoreBloPlayer5E;
-            scoreDigPlayer5E+=scoreDigPlayer5E;
-            scoreRecPlayer5E+=scoreRecPlayer5E;
+            scoreSet5E+=scoreSetPlayer5E;
+            scoreSer5E+=scoreSerPlayer5E;
+            scoreSpi5E+=scoreSpiPlayer5E;
+            scoreBlo5E+=scoreBloPlayer5E;
+            scoreDig5E+=scoreDigPlayer5E;
+            scoreRec5E+=scoreRecPlayer5E;
 
-            scoreSetPlayer6E+=scoreSetPlayer6E;
-            scoreSerPlayer6E+=scoreSerPlayer6E;
-            scoreSpiPlayer6E+=scoreSpiPlayer6E;
-            scoreBloPlayer6E+=scoreBloPlayer6E;
-            scoreDigPlayer6E+=scoreDigPlayer6E;
-            scoreRecPlayer6E+=scoreRecPlayer6E;
+            scoreSet6E+=scoreSetPlayer6E;
+            scoreSer6E+=scoreSerPlayer6E;
+            scoreSpi6E+=scoreSpiPlayer6E;
+            scoreBlo6E+=scoreBloPlayer6E;
+            scoreDig6E+=scoreDigPlayer6E;
+            scoreRec6E+=scoreRecPlayer6E;
 
             document.getElementById("scoretotal").innerHTML =
                 '<div id="showscorediv"><h1>" Total: ' + count + ' Set "</h1></div>' +
@@ -489,21 +578,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer1 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer1 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer1 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer1 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer1 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer1 + '</td>' +
+                "<td>  Set:  " + 	  scoreSet1 + "</td>" +
+                "<td>  Server:  " +   scoreSer1 + "</td>" +
+                "<td>  Spiker:  " +   scoreSpi1 + "</td>" +
+                "<td>  Blocker:  " +  scoreBlo1 + "</td>" +
+                "<td>  Digger:  " +   scoreDig1 + "</td>" +
+                "<td>  Receiver:  " + scoreRec1 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer1E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer1E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer1E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer1E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer1E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer1E + '</td>' +
+                "<td>  Set:  " + 	  scoreSet1E + "</td>" +
+                "<td>  Server:  " +   scoreSer1E + "</td>" +
+                "<td>  Spiker:  " +   scoreSpi1E + "</td>" +
+                "<td>  Blocker:  " +  scoreBlo1E + "</td>" +
+                "<td>  Digger:  " +   scoreDig1E + "</td>" +
+                "<td>  Receiver:  " + scoreRec1E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
@@ -516,21 +605,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer2 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer2 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer2 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer2 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer2 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer2 + '</td>' +
+                "<td>  Set:  " + scoreSet2 + "</td>" +
+                "<td>  Server:  " + scoreSer2 + "</td>" +
+                "<td>  Spiker:  " + scoreSpi2 + "</td>" +
+                "<td>  Blocker:  " + scoreBlo2 + "</td>" +
+                "<td>  Digger:  " + scoreDig2 + "</td>" +
+                "<td>  Receiver:  " + scoreRec2 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer2E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer2E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer2E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer2E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer2E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer2E + '</td>' +
+                "<td>  Set:  " + scoreSet2E + "</td>" +
+                "<td>  Server:  " + scoreSer2E + "</td>" +
+                "<td>  Spiker:  " + scoreSpi2E + "</td>" +
+                "<td>  Blocker:  " + scoreBlo2E + "</td>" +
+                "<td>  Digger:  " + scoreDig2E + "</td>" +
+                "<td>  Receiver:  " + scoreRec2E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
@@ -543,21 +632,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer3 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer3 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer3 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer3 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer3 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer3 + '</td>' +
+                "<td>  Set:  " + scoreSet3 + "</td>" +
+                "<td>  Server:  " + scoreSer3 + "</td>" +
+                "<td>  Spiker:  " + scoreSpi3 + "</td>" +
+                "<td>  Blocker:  " + scoreBlo3 + "</td>" +
+                "<td>  Digger:  " + scoreDig3 + "</td>" +
+                "<td>  Receiver:  " + scoreRec3 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer3E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer3E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer3E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer3E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer3E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer3E + '</td>' +
+                "<td>  Set:  " + scoreSet3E + "</td>" +
+                "<td>  Server:  " + scoreSer3E + "</td>" +
+                "<td>  Spiker:  " + scoreSpi3E + "</td>" +
+                "<td>  Blocker:  " + scoreBlo3E + "</td>" +
+                "<td>  Digger:  " + scoreDig3E + "</td>" +
+                "<td>  Receiver:  " + scoreRec3E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
@@ -570,21 +659,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer4 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer4 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer4 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer4 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer4 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer4 + '</td>' +
+                "<td>  Set:  " + scoreSet4 + "</td>" +
+                "<td>  Server:  " + scoreSer4 + "</td>" +
+                "<td>  Spiker:  " + scoreSpi4 + "</td>" +
+                "<td>  Blocker:  " + scoreBlo4 + "</td>" +
+                "<td>  Digger:  " + scoreDig4 + "</td>" +
+                "<td>  Receiver:  " + scoreRec4 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer4E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer4E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer4E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer4E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer4E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer4E + '</td>' +
+                "<td>  Set:  " + scoreSet4E + "</td>" +
+                "<td>  Server:  " + scoreSer4E + "</td>" +
+                "<td>  Spiker:  " + scoreSpi4E + "</td>" +
+                "<td>  Blocker:  " + scoreBlo4E + "</td>" +
+                "<td>  Digger:  " + scoreDig4E + "</td>" +
+                "<td>  Receiver:  " + scoreRec4E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
@@ -597,21 +686,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer5 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer5 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer5 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer5 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer5 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer5 + '</td>' +
+                "<td>  Set:  " + scoreSet5 + "</td>" +
+                "<td>  Server:  " + scoreSer5 + "</td>" +
+                "<td>  Spiker:  " + scoreSpi5 + "</td>" +
+                "<td>  Blocker:  " + scoreBlo5 + "</td>" +
+                "<td>  Digger:  " + scoreDig5 + "</td>" +
+                "<td>  Receiver:  " + scoreRec5 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer5E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer5E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer5E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer5E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer5E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer5E + '</td>' +
+                "<td>  Set:  " + scoreSet5E + "</td>" +
+                "<td>  Server:  " + scoreSer5E + "</td>" +
+                "<td>  Spiker:  " + scoreSpi5E + "</td>" +
+                "<td>  Blocker:  " + scoreBlo5E + "</td>" +
+                "<td>  Digger:  " + scoreDig5E + "</td>" +
+                "<td>  Receiver:  " + scoreRec5E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
@@ -624,21 +713,21 @@ function btninput() {
                 '<table>' +
                 '<tr>' +
                 '<td class="well"> Well :</td>' +
-                "<td>  Set:  " + scoreSetPlayer6 + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer6 + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer6 + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer6 + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer6 + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer6 + '</td>' +
+                "<td>  Set:  " + scoreSet6 + "</td>" +
+                "<td>  Server:  " + scoreSer6 + "</td>" +
+                "<td>  Spiker:  " + scoreSpi6 + "</td>" +
+                "<td>  Blocker:  " + scoreBlo6 + "</td>" +
+                "<td>  Digger:  " + scoreDig6 + "</td>" +
+                "<td>  Receiver:  " + scoreRec6 + '</td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td class="error"> Error :</td>' +
-                "<td>  Set:  " + scoreSetPlayer6E + "</td>" +
-                "<td>  Server:  " + scoreSerPlayer6E + "</td>" +
-                "<td>  Spiker:  " + scoreSpiPlayer6E + "</td>" +
-                "<td>  Blocker:  " + scoreBloPlayer6E + "</td>" +
-                "<td>  Digger:  " + scoreDigPlayer6E + "</td>" +
-                "<td>  Receiver:  " + scoreRecPlayer6E + '</td>' +
+                "<td>  Set:  " + scoreSet6E + "</td>" +
+                "<td>  Server:  " + scoreSer6E + "</td>" +
+                "<td>  Spiker:  " + scoreSpi6E + "</td>" +
+                "<td>  Blocker:  " + scoreBlo6E + "</td>" +
+                "<td>  Digger:  " + scoreDig6E + "</td>" +
+                "<td>  Receiver:  " + scoreRec6E + '</td>' +
                 '</tr>' +
                 '</table>' +
                 '</div>' +
