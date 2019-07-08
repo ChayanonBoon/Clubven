@@ -124,7 +124,10 @@ function btninput() {
 	var	scoreSpi6E = 0;
 	var	scoreBlo6E = 0;
 	var	scoreDig6E = 0;
-	var	scoreRec6E = 0;
+    var	scoreRec6E = 0;
+    
+    var	scoreWell = 0;
+    var	scoreError = 0;
 
 	
 	
@@ -1081,7 +1084,7 @@ function btninput() {
                 '</div>' +
                 '</div>';
         }
-	 //////////////////////////////////////////////////////////// show sum score  ///////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////// show sum score  ///////////////////////////////////////////////////////////////////////////////
         showsumscore();
 
         function showsumscore() {
@@ -1118,6 +1121,7 @@ function btninput() {
             '</div>';
         }
         /////////////////////////////////////////////////////////// menu click show score //////////////////////////////////////////////////////////
+        
         var btnShowScore = document.getElementById("divscore");
         btnShowScore.addEventListener("click", divshowscore);
         var btnShowMaxScore = document.getElementById("divmax");
