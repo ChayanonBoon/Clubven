@@ -1088,23 +1088,21 @@ function btninput() {
         showsumscore();
 
         function showsumscore() {
-            // well
-            scoreWell = scoreSetPlayer1 + scoreSerPlayer1 + scoreSpiPlayer1 + scoreBloPlayer1 + scoreDigPlayer1 + scoreRecPlayer1 + 
+             // well
+            scoreWell += scoreSetPlayer1 + scoreSerPlayer1 + scoreSpiPlayer1 + scoreBloPlayer1 + scoreDigPlayer1 + scoreRecPlayer1 + 
             scoreSetPlayer2 + scoreSerPlayer2 + scoreSpiPlayer2 + scoreBloPlayer2 + scoreDigPlayer2 + scoreRecPlayer2 +
             scoreSetPlayer3 + scoreSerPlayer3 + scoreSpiPlayer3 + scoreBloPlayer3 + scoreDigPlayer3 + scoreRecPlayer3 +
             scoreSetPlayer4 + scoreSerPlayer4 + scoreSpiPlayer4 + scoreBloPlayer4 + scoreDigPlayer4 + scoreRecPlayer4 +
             scoreSetPlayer5 + scoreSerPlayer5 + scoreSpiPlayer5 + scoreBloPlayer5 + scoreDigPlayer5 + scoreRecPlayer5 +
-            scoreSetPlayer6 + scoreSerPlayer6 + scoreSpiPlayer6 + scoreBloPlayer6 + scoreDigPlayer6 + scoreRecPlayer6 + scoreWell;
+            scoreSetPlayer6 + scoreSerPlayer6 + scoreSpiPlayer6 + scoreBloPlayer6 + scoreDigPlayer6 + scoreRecPlayer6;
 
             //error
-            scoreError = scoreSetPlayer1E + scoreSerPlayer1E + scoreSpiPlayer1E + scoreBloPlayer1E + scoreDigPlayer1E + scoreRecPlayer1E + 
+            scoreError += + scoreSetPlayer1E + scoreSerPlayer1E + scoreSpiPlayer1E + scoreBloPlayer1E + scoreDigPlayer1E + scoreRecPlayer1E + 
             scoreSetPlayer2E + scoreSerPlayer2E + scoreSpiPlayer2E + scoreBloPlayer2E + scoreDigPlayer2E+ scoreRecPlayer2E +
             scoreSetPlayer3E + scoreSerPlayer3E + scoreSpiPlayer3E + scoreBloPlayer3E + scoreDigPlayer3E + scoreRecPlayer3E +
             scoreSetPlayer4E + scoreSerPlayer4E + scoreSpiPlayer4E + scoreBloPlayer4E + scoreDigPlayer4E + scoreRecPlayer4E +
             scoreSetPlayer5E + scoreSerPlayer5E + scoreSpiPlayer5E + scoreBloPlayer5E + scoreDigPlayer5E + scoreRecPlayer5E +
-            scoreSetPlayer6E + scoreSerPlayer6E + scoreSpiPlayer6E + scoreBloPlayer6E + scoreDigPlayer6E + scoreRecPlayer6E + scoreError;
-
-
+            scoreSetPlayer6E + scoreSerPlayer6E + scoreSpiPlayer6E + scoreBloPlayer6E + scoreDigPlayer6E + scoreRecPlayer6E ;
 
             // show score all
             document.getElementById("scoresum").innerHTML = 
