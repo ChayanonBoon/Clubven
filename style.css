@@ -379,3 +379,26 @@ button{
     height: 100%;
     width: 20%;
   }
+/* */
+  .divscoresum:after {
+    text-align: center;
+  }
+  .divscoresum{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 40vw;
+
+  }
+  .divsum{
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    text-align: center;
+    height: 16vw; /* Should be removed. Only for demonstration */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 75%;
+    box-shadow: 0 4px 6px 0 rgba(56, 56, 56, 0.178), 0 6px 20px 0 rgba(0, 0, 0, 0.096);
+    font-size: 4vw;
+  }
