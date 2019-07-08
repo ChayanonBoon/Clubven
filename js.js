@@ -1116,7 +1116,7 @@ function btninput() {
                     '<h2 class="fornsize">Error</h2>'+
                     '<h1 style="color: #FA897B">'+ scoreError +'</h1>'+
                 '</div>'+
-            '</div>';
+            '</div>'+'</div>';
         }
         /////////////////////////////////////////////////////////// menu click show score //////////////////////////////////////////////////////////
         
