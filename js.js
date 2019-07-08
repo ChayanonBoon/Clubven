@@ -1081,6 +1081,42 @@ function btninput() {
                 '</div>' +
                 '</div>';
         }
+	 //////////////////////////////////////////////////////////// show sum score  ///////////////////////////////////////////////////////////////////////////////
+        showsumscore();
+
+        function showsumscore() {
+            // well
+            scoreWell = scoreSetPlayer1 + scoreSerPlayer1 + scoreSpiPlayer1 + scoreBloPlayer1 + scoreDigPlayer1 + scoreRecPlayer1 + 
+            scoreSetPlayer2 + scoreSerPlayer2 + scoreSpiPlayer2 + scoreBloPlayer2 + scoreDigPlayer2 + scoreRecPlayer2 +
+            scoreSetPlayer3 + scoreSerPlayer3 + scoreSpiPlayer3 + scoreBloPlayer3 + scoreDigPlayer3 + scoreRecPlayer3 +
+            scoreSetPlayer4 + scoreSerPlayer4 + scoreSpiPlayer4 + scoreBloPlayer4 + scoreDigPlayer4 + scoreRecPlayer4 +
+            scoreSetPlayer5 + scoreSerPlayer5 + scoreSpiPlayer5 + scoreBloPlayer5 + scoreDigPlayer5 + scoreRecPlayer5 +
+            scoreSetPlayer6 + scoreSerPlayer6 + scoreSpiPlayer6 + scoreBloPlayer6 + scoreDigPlayer6 + scoreRecPlayer6 + scoreWell;
+
+            //error
+            scoreError = scoreSetPlayer1E + scoreSerPlayer1E + scoreSpiPlayer1E + scoreBloPlayer1E + scoreDigPlayer1E + scoreRecPlayer1E + 
+            scoreSetPlayer2E + scoreSerPlayer2E + scoreSpiPlayer2E + scoreBloPlayer2E + scoreDigPlayer2E+ scoreRecPlayer2E +
+            scoreSetPlayer3E + scoreSerPlayer3E + scoreSpiPlayer3E + scoreBloPlayer3E + scoreDigPlayer3E + scoreRecPlayer3E +
+            scoreSetPlayer4E + scoreSerPlayer4E + scoreSpiPlayer4E + scoreBloPlayer4E + scoreDigPlayer4E + scoreRecPlayer4E +
+            scoreSetPlayer5E + scoreSerPlayer5E + scoreSpiPlayer5E + scoreBloPlayer5E + scoreDigPlayer5E + scoreRecPlayer5E +
+            scoreSetPlayer6E + scoreSerPlayer6E + scoreSpiPlayer6E + scoreBloPlayer6E + scoreDigPlayer6E + scoreRecPlayer6E + scoreError;
+
+
+
+            // show score all
+            document.getElementById("scoresum").innerHTML = 
+            '<div id="showscorediv"><h1>" Score Sum "</h1>' +
+            '<div class="divscoresum">'+
+                '<div class="divsum">'+
+                    '<h2 class="fornsize">Well</h2>'+
+                    '<h1 style="color: #D0E6A5">'+ scoreWell +'</h1>'+
+                '</div>'+
+                '<div class="divsum">'+
+                    '<h2 class="fornsize">Error</h2>'+
+                    '<h1 style="color: #FA897B">'+ scoreError +'</h1>'+
+                '</div>'+
+            '</div>';
+        }
         /////////////////////////////////////////////////////////// menu click show score //////////////////////////////////////////////////////////
         var btnShowScore = document.getElementById("divscore");
         btnShowScore.addEventListener("click", divshowscore);
@@ -1090,16 +1126,20 @@ function btninput() {
         btnShowErrorScore.addEventListener("click", divshowerror);
         var btnShowTotalScore = document.getElementById("divtotal");
         btnShowTotalScore.addEventListener("click", divshowtotal);
+        var btnShowSumScore = document.getElementById("divsum");
+        btnShowSumScore.addEventListener("click", divshowsum);
 
         var divAllScore = document.getElementById("showscore");
         var divMaxScore = document.getElementById("scoremax");
         var divErrorScore = document.getElementById("scoreerror");
         var divTotalScore = document.getElementById("scoretotal");
+        var divSumScore = document.getElementById("scoresum");
 
         divAllScore.style.display = "block";
         divMaxScore.style.display = "none";
         divErrorScore.style.display = "none";
         divTotalScore.style.display = "none";
+        divSumScore.style.display = "none";
 
 
         function divshowscore() {
@@ -1107,6 +1147,7 @@ function btninput() {
             divMaxScore.style.display = "none";
             divErrorScore.style.display = "none";
             divTotalScore.style.display = "none";
+            divSumScore.style.display = "none";
         }
 
         function divshowmax() {
@@ -1114,6 +1155,7 @@ function btninput() {
             divMaxScore.style.display = "block";
             divErrorScore.style.display = "none";
             divTotalScore.style.display = "none";
+            divSumScore.style.display = "none";
         }
 
         function divshowerror() {
@@ -1121,12 +1163,21 @@ function btninput() {
             divMaxScore.style.display = "none";
             divErrorScore.style.display = "block";
             divTotalScore.style.display = "none";
+            divSumScore.style.display = "none";
         }
         function divshowtotal() {
             divAllScore.style.display = "none";
             divMaxScore.style.display = "none";
             divErrorScore.style.display = "none";
             divTotalScore.style.display = "block";
+            divSumScore.style.display = "none";
+        }
+        function divshowsum() {
+            divAllScore.style.display = "none";
+            divMaxScore.style.display = "none";
+            divErrorScore.style.display = "none";
+            divTotalScore.style.display = "none";
+            divSumScore.style.display = "block";
         }
 
         //////////////////////////////////////////////////////////////////** Reset value All *//////////////////////////////////////////////////////////////////
